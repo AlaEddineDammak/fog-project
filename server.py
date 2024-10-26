@@ -86,7 +86,7 @@ async def distribute_tasks(websocket, path):
 async def main():
     global parts, results, n_clients, task_count
     image_path = r'image.jpg'
-    n_clients = 1  # Nombre de clients (y compris votre propre machine)
+    n_clients = 2  # Nombre de clients (y compris votre propre machine)
     task_count = 0
     parts = split_image(image_path, n_clients)
     results = []
